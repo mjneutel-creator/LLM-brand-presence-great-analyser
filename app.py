@@ -36,6 +36,7 @@ with st.sidebar:
         "Revolut"
     ]
 )
+)
     category = st.text_input("Category", value="UK banks")
     topic = st.text_input("Topic", value="sustainability")
 
