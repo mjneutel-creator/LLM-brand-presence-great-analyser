@@ -17,7 +17,25 @@ with st.sidebar:
     st.header("Analysis Settings")
 
     brand = st.text_input("Brand name", value="Lloyds Banking Group")
-    competitors = st.text_input("Competitors (comma-separated)", value="NatWest, Barclays")
+    competitors = st.multiselect(
+    "Competitors",
+    options=[
+        "HSBC",
+        "Nationwide",
+        "Santander",
+        "Monzo",
+        "Revolut",
+        "NatWest",
+        "Barclays"
+    ],
+    default=[
+        "HSBC",
+        "Nationwide",
+        "Santander",
+        "Monzo",
+        "Revolut"
+    ]
+)
     category = st.text_input("Category", value="UK banks")
     topic = st.text_input("Topic", value="sustainability")
 
