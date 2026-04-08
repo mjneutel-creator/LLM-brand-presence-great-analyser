@@ -16,31 +16,42 @@ st.caption("Benchmark brand salience, narratives, and risk framing across multip
 with st.sidebar:
     st.header("Analysis Settings")
 
-    brand = st.text_input("Brand name", value="Lloyds Banking Group")
-competitors = st.multiselect(
-    "Competitors",
-    options=[
-        "HSBC",
-        "Nationwide",
-        "Santander",
-        "Monzo",
-        "Revolut",
-        "NatWest",
-        "Barclays"
-    ],
-    default=[
-        "HSBC",
-        "Nationwide",
-        "Santander",
-        "Monzo",
-        "Revolut"
-    ]
-)
+    brand = st.text_input(
+        "Brand name",
+        value="Lloyds Banking Group"
+    )
 
-competitors = ", ".join(competitors)
+    competitors = st.multiselect(
+        "Competitors",
+        options=[
+            "HSBC",
+            "Nationwide",
+            "Santander",
+            "Monzo",
+            "Revolut",
+            "NatWest",
+            "Barclays"
+        ],
+        default=[
+            "HSBC",
+            "Nationwide",
+            "Santander",
+            "Monzo",
+            "Revolut"
+        ]
+    )
 
-    category = st.text_input("Category", value="UK banks")
-    topic = st.text_input("Topic", value="sustainability")
+    competitors = ", ".join(competitors)
+
+    category = st.text_input(
+        "Category",
+        value="UK banks"
+    )
+
+    topic = st.text_input(
+        "Topic",
+        value="sustainability"
+    )
 
     st.divider()
     st.subheader("Query types")
