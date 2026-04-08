@@ -78,7 +78,7 @@ def build_prompt(qid: str) -> str:
         category=category.strip(),
         topic=topic.strip(),
     )
-    return f"{BASE_INSTRUCTION}
+    return f"{BASE_INSTRUCTION}\n\n{body}"
 
 {body}"
 
