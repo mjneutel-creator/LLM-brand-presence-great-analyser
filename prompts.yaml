@@ -1,0 +1,26 @@
+base_instruction: |
+  You are an analyst. Answer in 150–200 words.
+  Use neutral, evidence-aware language. Avoid marketing copy.
+  If you are unsure, say so.
+  Include both positives and criticisms where relevant.
+
+queries:
+  - id: unprompted_recall
+    label: Unprompted recall
+    template: "Which {category} organisations are leaders in {topic}?"
+
+  - id: comparative
+    label: Comparative analysis
+    template: "Compare {brand} with {competitors} on {topic}. Provide key differences."
+
+  - id: brand_strengths
+    label: Brand strengths
+    template: "What is {brand} best known for in the context of {topic}?"
+
+  - id: risk_criticisms
+    label: Risks & criticisms
+    template: "What criticisms or risks are associated with {brand} regarding {topic}?"
+
+  - id: purchase_consideration
+    label: Consideration drivers
+    template: "If someone is choosing between {brand} and {competitors}, what factors might influence the decision?"
