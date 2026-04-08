@@ -81,7 +81,6 @@ def build_prompt(qid: str) -> str:
 
     prompt = BASE_INSTRUCTION + "\n\n" + body
     return prompt
-``
 
 
 def get_connectors():
